@@ -1,7 +1,7 @@
 /*
-Program name:  SDEV 200 - M07 Semester Project Classes
+Program name:  SDEV 200 - M08 Semester Project Classes
 Author:  Karagory, Kevin G. 
-Date:  05/10/2022
+Date:  05/15/2022
 */
 
 /*
@@ -84,45 +84,46 @@ public void start(Stage primaryStage) {
 	GridPane gridPane = new GridPane();
 	gridPane.setHgap(5);
 	gridPane.setVgap(5);
-	gridPane.add(new Label("Book ID:"), 0, 0);
-	gridPane.add(tfBook_ID, 1, 0);
-	gridPane.add(new Label("Title:"), 0, 1);
-	gridPane.add(tfBook_title, 1, 1);
-	gridPane.add(new Label("Publication Year:"), 0, 2);
-	gridPane.add(tfBook_pub_year, 1, 2);
-	gridPane.add(new Label("Location:"), 0, 3);
-	gridPane.add(tfBook_location, 1, 3);
-	gridPane.add(new Label("Member ID:"), 2, 0);
-	gridPane.add(tfMember_ID, 3, 0);
-	gridPane.add(new Label("First Name:"), 2, 1);
-	gridPane.add(tfName_first, 3, 1);
-	gridPane.add(new Label("Last Name:"), 2, 2);
-	gridPane.add(tfName_last, 3, 2);
-	//gridPane.add(new Label("Transaction ID:"), 4, 0);
-	//gridPane.add(tfTransaction_ID, 5, 0);
-	gridPane.add(new Label("Check Out Date:"), 4, 1);
-	gridPane.add(tfDate_check_out, 5, 1);
-	gridPane.add(new Label("Date Due:"), 4, 2);
-	gridPane.add(tfDate_due, 5, 2);
-	gridPane.add(btClear, 0, 4);
-	gridPane.add(tfOutput, 3, 12);
-	gridPane.add(btNew_book, 0, 5);
-	//gridPane.add(btSet_book_title, 0, 6);
-	//gridPane.add(btSet_book_pub_year, 0, 7);
-	//gridPane.add(btSet_book_location, 0, 8);
-	//gridPane.add(btGet_book_title, 0, 9);
-	//gridPane.add(btGet_book_pub_year, 0, 10);
-	//gridPane.add(btGet_book_location, 0, 11);
-	gridPane.add(btNew_member, 2, 5);
-	//gridPane.add(btSet_name_first, 2, 6);
-	//gridPane.add(btSet_name_last, 2, 7);
-	//gridPane.add(btGet_name_first, 2, 8);
-	//gridPane.add(btGet_name_last, 2, 9);
-	gridPane.add(btNew_transaction, 4, 5);
-	//gridPane.add(btSet_date_check_out, 4, 6);
-	gridPane.add(btSet_date_due, 4, 7);
-	//gridPane.add(btGet_date_check_out, 4, 8);
-	//gridPane.add(btGet_date_due, 4, 9);
+	gridPane.add(new Label("LIBARARY CHECKOUT APPLICATION"), 3, 0);
+	gridPane.add(new Label("Book ID:"), 0, 1);
+	gridPane.add(tfBook_ID, 1, 1);
+	gridPane.add(new Label("Title:"), 0, 2);
+	gridPane.add(tfBook_title, 1, 2);
+	gridPane.add(new Label("Publication Year:"), 0, 3);
+	gridPane.add(tfBook_pub_year, 1, 3);
+	gridPane.add(new Label("Location:"), 0, 4);
+	gridPane.add(tfBook_location, 1, 4);
+	gridPane.add(new Label("Member ID:"), 2, 1);
+	gridPane.add(tfMember_ID, 3, 1);
+	gridPane.add(new Label("First Name:"), 2, 2);
+	gridPane.add(tfName_first, 3, 2);
+	gridPane.add(new Label("Last Name:"), 2, 3);
+	gridPane.add(tfName_last, 3, 3);
+	//gridPane.add(new Label("Transaction ID:"), 4, 1);
+	//gridPane.add(tfTransaction_ID, 5, 1);
+	gridPane.add(new Label("Check Out Date:"), 4, 2);
+	gridPane.add(tfDate_check_out, 5, 2);
+	gridPane.add(new Label("Date Due:"), 4, 3);
+	gridPane.add(tfDate_due, 5, 3);
+	gridPane.add(btClear, 0, 5);
+	gridPane.add(tfOutput, 3, 13);
+	gridPane.add(btNew_book, 0, 6);
+	//gridPane.add(btSet_book_title, 0, 7);
+	//gridPane.add(btSet_book_pub_year, 0, 8);
+	//gridPane.add(btSet_book_location, 0, 9);
+	//gridPane.add(btGet_book_title, 0, );
+	//gridPane.add(btGet_book_pub_year, 0, 11);
+	//gridPane.add(btGet_book_location, 0, 12);
+	gridPane.add(btNew_member, 2, 6);
+	//gridPane.add(btSet_name_first, 2, 7);
+	//gridPane.add(btSet_name_last, 2, 8);
+	//gridPane.add(btGet_name_first, 2, 9);
+	//gridPane.add(btGet_name_last, 2, 10);
+	gridPane.add(btNew_transaction, 4, 6);
+	//gridPane.add(btSet_date_check_out, 4, 7);
+	//gridPane.add(btSet_date_due, 4, 8);
+	//gridPane.add(btGet_date_check_out, 4, 9);
+	//gridPane.add(btGet_date_due, 4, 10);
 	
 	// Set properties for UI
 	gridPane.setAlignment(Pos.CENTER);
@@ -204,8 +205,8 @@ public void start(Stage primaryStage) {
 
 	
 	// Create a scene and place it in the stage
-	Scene scene = new Scene(gridPane, 850, 500);
-	primaryStage.setTitle("M07 Semester Project - JavaFX"); // Set title
+	Scene scene = new Scene(gridPane, 900, 450);
+	primaryStage.setTitle("M08 Semester Project"); // Set title
 	primaryStage.setScene(scene); // Place the scene in the stage
 	primaryStage.show(); // Display the stage
 }
